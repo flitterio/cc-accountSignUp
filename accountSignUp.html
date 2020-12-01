@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account Sign Up</title>
+    <link href="accountSignUp.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <nav role="navigation">Nav</nav>
+        <main role="main">
+            <header>
+                <h1>
+                    New User
+                </h1>
+            </header>
+            <section>
+                <form id="signUp">
+                    <label for="first-name">
+                        First Name
+                    </label>
+                    <input id="first-name" name="first-name" type="text" placeholder="First Name" required>
+                <br><br>
+                    <label for="last-name">
+                        Last Name
+                    </label>
+                    <input id="last-name" name="last-name" type="text" placeholder="Last Name" required>
+                <br><br>
+                    <label for="email">
+                        Email
+                    </label>
+                    <input id="email" placeholder="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                <br><br>
+                    <label for="username">
+                        Username
+                    </label>
+                    <input id="username"  name="username" type="text" placeholder="Username" required> 
+                <br><br>
+                    <label for="pwd">
+                        Password
+                    </label>
+                    <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required>
+                <br><br>
+                    <input type="submit">
+                </form>
+            </section>
+        </main>
+        <footer>
+            Footer
+        </footer>
+  </body>
+</html>
